@@ -1,27 +1,132 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: rgb(193, 190, 225);color: rgb(171, 24, 184);
-        }
-    </style>
+    <meta name="description" content="Forma Digital crée des sites web modernes et performants pour aider les entreprises à se démarquer et à développer leur présence en ligne.">
+    <meta name="theme-color" content="#f6f4ef">
+    <meta property="og:title" content="Forma Digital — Web design & développement">
+    <meta property="og:description" content="Sites web modernes, performants et sur mesure pour les entreprises ambitieuses.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <title>Forma Digital | Sites web modernes pour entreprises ambitieuses</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>ZARA SHOP</h1>
-    <h4>Welcome to ZARA SHOP</h4>
-    
-    <p>we are a fashion retailer</p>
-    <p>what we offer</p>
-    <ul>
-        <li>clothing</li>
-        <li>accessories</li>
-        <li>shoes</li>
-    </ul>
-    <h3>how to order ?</h3>
-    <a href="https://www.zara.com/">click here</a>
-    h
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <header class="site-header" data-header>
+        <div class="container nav-wrap">
+            <a class="brand" href="#home" aria-label="Forma Digital, accueil"><span class="brand-mark" aria-hidden="true">F</span><span>FORMA DIGITAL</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu"><span></span><span></span></button>
+            <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+                <a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">À propos</a><a href="#contact">Contact</a>
+                <a class="button button-dark nav-cta" href="#contact">Démarrer un projet</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Studio web indépendant · Abidjan</p>
+                    <h1>Votre entreprise mérite une <em>meilleure présence</em> digitale.</h1>
+                    <p class="hero-lead">Nous concevons et développons des sites modernes, responsives et performants pour aider votre entreprise à se démarquer, connecter avec ses clients et grandir en ligne.</p>
+                    <div class="hero-actions"><a class="button button-dark" href="#contact">Démarrer un projet</a><a class="text-link" href="#portfolio">Voir nos réalisations <span aria-hidden="true">↗</span></a></div>
+                </div>
+                <div class="hero-visual reveal" aria-label="Visualisation abstraite d'une interface web">
+                    <div class="browser-frame">
+                        <div class="browser-bar"><i></i><i></i><i></i></div>
+                        <div class="browser-content">
+                            <div class="interface-label">IDENTITÉ / DIGITAL</div>
+                            <div class="interface-title">Forma<br>Digital<span>.</span></div>
+                            <div class="interface-grid"><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div class="visual-note"><span>01</span> Conception & développement</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-heading reveal"><p class="eyebrow">Services</p><h2>Des solutions digitales pensées pour votre croissance.</h2></div>
+                <div class="service-list">
+                    <article class="service reveal"><span class="service-number">01</span><div><h3>Sites vitrines</h3><p>Présentez votre entreprise, vos services et votre expertise avec une image professionnelle qui inspire confiance.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
+                    <article class="service reveal"><span class="service-number">02</span><div><h3>Boutiques e-commerce</h3><p>Vendez vos produits en ligne grâce à une expérience d'achat claire, rapide et adaptée à vos besoins.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
+                    <article class="service reveal"><span class="service-number">03</span><div><h3>Landing pages</h3><p>Lancez un produit ou une campagne avec une page centrée sur votre offre, conçue pour convertir vos visiteurs.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section-heading portfolio-heading reveal"><div><p class="eyebrow">Portfolio</p><h2>Une sélection de concepts.</h2></div><p>Quelques explorations créatives imaginées pour illustrer nos savoir-faire. Ces projets sont des démonstrations, pas des réalisations clients.</p></div>
+                <div class="project-grid">
+                    <article class="project project-large reveal"><div class="project-preview restaurant-preview"><div class="project-screen"><small>MAISON NOIR</small><strong>La cuisine<br>comme un art.</strong><span>Découvrir le menu</span></div></div><div class="project-meta"><div><p class="project-category">Concept restaurant</p><h3>Maison Noir</h3></div><a href="#contact" aria-label="Demander un projet similaire">Explorer ↗</a></div></article>
+                    <article class="project reveal"><div class="project-preview fashion-preview"><div class="fashion-figure"><span>Édition<br>01</span></div></div><div class="project-meta"><div><p class="project-category">Concept e-commerce</p><h3>Atelier 17</h3></div><a href="#contact" aria-label="Demander un projet similaire">Explorer ↗</a></div></article>
+                    <article class="project reveal"><div class="project-preview corporate-preview"><div class="corporate-panel"><b>AFRICA<br>CAPITAL</b><span>Construire l'avenir.</span></div></div><div class="project-meta"><div><p class="project-category">Concept corporate</p><h3>Nord Capital</h3></div><a href="#contact" aria-label="Demander un projet similaire">Explorer ↗</a></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="difference section">
+            <div class="container difference-grid">
+                <div class="difference-intro reveal"><p class="eyebrow">Pourquoi nous choisir</p><h2>Une approche exigeante, de l'idée au lancement.</h2></div>
+                <div class="difference-list">
+                    <div class="difference-item reveal"><span>01</span><h3>Design moderne</h3><p>Une identité digitale cohérente, différenciée et pensée pour votre audience.</p></div>
+                    <div class="difference-item reveal"><span>02</span><h3>Responsive</h3><p>Une expérience fluide sur ordinateur, tablette et téléphone.</p></div>
+                    <div class="difference-item reveal"><span>03</span><h3>Performance</h3><p>Un code optimisé pour des pages rapides et accessibles.</p></div>
+                    <div class="difference-item reveal"><span>04</span><h3>Communication claire</h3><p>Un accompagnement transparent, des étapes simples et des retours réguliers.</p></div>
+                    <div class="difference-item reveal"><span>05</span><h3>Solutions sur mesure</h3><p>Chaque choix est adapté à vos objectifs, votre contenu et vos utilisateurs.</p></div>
+                    <div class="difference-item reveal"><span>06</span><h3>Livraison professionnelle</h3><p>Un projet finalisé avec soin, testé et prêt à être mis en ligne.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container about-grid">
+                <div class="about-label reveal"><p class="eyebrow">À propos</p></div>
+                <div class="about-copy reveal"><h2>Un studio indépendant, attentif aux ambitions de chaque entreprise.</h2><p>Forma Digital accompagne les entreprises, professionnels et entrepreneurs dans la création d'une présence en ligne forte. Chaque projet est abordé comme un partenariat : comprendre le besoin, structurer l'expérience, concevoir avec intention et livrer avec exigence.</p><p>Notre objectif est simple — transformer votre vision en une présence digitale claire, utile et mémorable.</p><a class="text-link" href="#contact">Parlons de votre projet <span aria-hidden="true">↗</span></a></div>
+            </div>
+        </section>
+
+        <section class="pricing section" id="pricing">
+            <div class="container">
+                <div class="section-heading reveal"><p class="eyebrow">Offres</p><h2>Une formule adaptée à chaque étape.</h2></div>
+                <div class="pricing-grid">
+                    <article class="pricing-card reveal"><p class="package-type">Essentiel</p><h3>Site Starter</h3><p>Pour présenter votre activité et établir une présence professionnelle en ligne.</p><ul><li>Design sur mesure</li><li>Jusqu'à 3 pages</li><li>Responsive mobile</li><li>Formulaire de contact</li></ul><a class="button button-outline" href="#contact" data-package="Starter Website">Demander un devis</a></article>
+                    <article class="pricing-card featured reveal"><p class="package-type">Croissance</p><h3>Site Business</h3><p>Pour développer votre crédibilité et présenter vos services en profondeur.</p><ul><li>Design sur mesure</li><li>Jusqu'à 6 pages</li><li>Optimisation SEO</li><li>Animations légères</li></ul><a class="button button-dark" href="#contact" data-package="Business Website">Demander un devis</a></article>
+                    <article class="pricing-card reveal"><p class="package-type">Vente en ligne</p><h3>Boutique e-commerce</h3><p>Pour présenter vos produits et vendre en ligne avec une expérience adaptée.</p><ul><li>Catalogue produits</li><li>Paiement en ligne</li><li>Gestion des commandes</li><li>Formation à l'administration</li></ul><a class="button button-outline" href="#contact" data-package="E-commerce Website">Demander un devis</a></article>
+                </div>
+                <p class="pricing-note">Le tarif dépend des fonctionnalités, du contenu et des exigences de votre projet. Chaque devis est établi sur mesure.</p>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-intro reveal"><p class="eyebrow">Contact</p><h2>Parlons de votre prochain projet.</h2><p>Décrivez-nous votre idée. Nous reviendrons vers vous pour définir ensemble les prochaines étapes.</p><a class="whatsapp-link" href="https://wa.me/000000000000" target="_blank" rel="noopener">WhatsApp — numéro à configurer <span>↗</span></a><p class="config-note">Remplacez <code>000000000000</code> par votre numéro international, sans espaces ni signes.</p></div>
+                <form class="contact-form reveal" id="contact-form" novalidate>
+                    <div class="form-row">
+                        <label>Nom complet *<input type="text" name="name" autocomplete="name" required><span class="field-error"></span></label>
+                        <label>Email *<input type="email" name="email" autocomplete="email" required><span class="field-error"></span></label>
+                    </div>
+                    <div class="form-row">
+                        <label>Entreprise <span>(optionnel)</span><input type="text" name="company" autocomplete="organization"></label>
+                        <label>Type de projet *<select name="project" required><option value="">Sélectionner</option><option>Site vitrine</option><option>Boutique e-commerce</option><option>Landing page</option><option>Autre projet</option></select><span class="field-error"></span></label>
+                    </div>
+                    <label>Budget estimé <span>(optionnel)</span><select name="budget"><option value="">À définir ensemble</option><option>Petit budget</option><option>Budget intermédiaire</option><option>Budget conséquent</option></select></label>
+                    <label>Parlez-nous de votre projet *<textarea name="message" rows="5" required minlength="20"></textarea><span class="field-error"></span></label>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    <button class="button button-dark" type="submit">Envoyer la demande</button>
+                    <p class="form-disclaimer">Ce formulaire effectue une validation locale uniquement. Il n'envoie pas encore les données vers un service configuré.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-grid"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">F</span><span>FORMA DIGITAL</span></a><p>Web design & développement<br>Abidjan, Côte d'Ivoire.</p><div class="footer-links"><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></div><p class="copyright">© <span data-year></span> Forma Digital. Tous droits réservés.</p></div></footer>
 </body>
 </html>
